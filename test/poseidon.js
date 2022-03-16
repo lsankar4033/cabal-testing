@@ -17,7 +17,7 @@ describe("poseidon equivalence", function() {
     circuit2 = await wasm_tester(path.join(__dirname, "circuits", "poseidon_2.circom"));
   });
 
-  it.only("should work for single input poseidon", async () => {
+  it("should work for single input poseidon", async () => {
     const inputs = [72296106748749850946775007]; // NOTE: taken from an actual sample case
     const res = poseidon(inputs)
 

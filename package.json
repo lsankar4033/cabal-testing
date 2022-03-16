@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,13 @@
   },
   "homepage": "https://github.com/lsankar4033/cabal-testing#readme",
   "dependencies": {
-    "circomlib": "2.0.3"
+    "circomlib": "2.0.3",
+    "circomlibjs": "0.1.1"
   },
   "devDependencies": {
+    "chai": "4.3.6",
+    "circom_tester": "0.0.10",
+    "mocha": "9.2.2",
     "zkey-manager": "0.1.2"
   }
 }

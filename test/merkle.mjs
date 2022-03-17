@@ -69,7 +69,7 @@ describe("merkle tree equivalence", function() {
       await testLeaves(circuit, leaves);
     });
 
-    it.only("single null element (at end)", async () => {
+    it("single null element (at end)", async () => {
       const __dirname = dirname(fileURLToPath(import.meta.url));
       let circuit = await tester(path.join(__dirname, "circuits", "merkle_2.circom"));
 
@@ -78,8 +78,7 @@ describe("merkle tree equivalence", function() {
     });
   });
 
-  // NOTE; if this doesn't work, can test sub-trees above
-  it.only("works for 10-depth merkle tree using devcon poap values", async () => {
+  it("works for 10-depth merkle tree using devcon poap values", async () => {
     const __dirname = dirname(fileURLToPath(import.meta.url));
     let circuit = await tester(path.join(__dirname, "circuits", "merkle_10.circom"));
 
